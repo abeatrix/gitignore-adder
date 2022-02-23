@@ -7,13 +7,6 @@ import * as vscode from "vscode";
 export function activate(context: vscode.ExtensionContext) {
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
-	console.log('Extension "gitignore-adder" is now running.');
-
-	const rootDir = vscode.workspace.workspaceFolders
-		? vscode.workspace.workspaceFolders[0].uri.fsPath
-		: null;
-	const newFile = new vscode.WorkspaceEdit();
-	const filePath = vscode.Uri.file(rootDir + "/.gitignore");
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
@@ -21,6 +14,11 @@ export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerCommand(
 		"gitignore-adder.createFile",
 		() => {
+		const rootDir = vscode.workspace.workspaceFolders
+		? vscode.workspace.workspaceFolders[0].uri.fsPath
+		: null;
+		const newFile = new vscode.WorkspaceEdit();
+		const filePath = vscode.Uri.file(rootDir + "/.gitignore");
 		// Create a .gitignore file if it doesn't exist
 		newFile.createFile(filePath, { ignoreIfExists: true });
 		vscode.workspace.applyEdit(newFile);
@@ -32,10 +30,15 @@ export function activate(context: vscode.ExtensionContext) {
 	let disposable2 = vscode.commands.registerCommand(
 		"gitignore-adder.addFile",
 		(uri: vscode.Uri) => {
+		const rootDir = vscode.workspace.workspaceFolders
+		? vscode.workspace.workspaceFolders[0].uri.fsPath
+		: null;
+		const newFile = new vscode.WorkspaceEdit();
+		const filePath = vscode.Uri.file(rootDir + "/.gitignore");
 		// Create a .gitignore file if it doesn't exist
 		newFile.createFile(filePath, { ignoreIfExists: true });
 		const selected = uri.path.replace(`${rootDir}/`, "");
-		newFile.insert(filePath, new vscode.Position(0, 0), "\n" + selected);
+		newFile.insert(filePath, new vscode.Position(0, 0), selected + "\n");
 		vscode.workspace.applyEdit(newFile);
 		// Display a message box to the user
 		vscode.window.showInformationMessage(

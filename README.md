@@ -17,3 +17,5 @@ This extension allows you to add selected directory or file to the `.gitignore` 
 * make changes
 * debug via F5 (Run Web Extension)
 * reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window to check your changes.
+
+<a href="https://www.flaticon.com/free-icons/disabled" title="disabled icons">Disabled icons created by Freepik - Flaticon</a>
