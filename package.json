@@ -2,6 +2,8 @@
 	"name": "gitignore-adder",
 	"displayName": "gitignore adder",
 	"description": "Add files to gitignore easily.",
+	"repository": "https://github.com/abeatrix/gitignore-adder",
+	"publisher": "beatrix",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.64.0"

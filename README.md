@@ -7,6 +7,7 @@ This extension allows you to add selected directory or file to the `.gitignore` 
 - Create a `.gitignore` file with a single command
 - Add selected directory or file to the `.gitignore` by right clicking on the file name in the file explorer
 - Add current open file to the `.gitignore` by right clicking on the editor
+- Run on all VS Code editors, including VS Code web editors
 
 > Tip: If a `.gitignore` file does not exist at root when adding a file / directory, a new `.gitignore` file will be created at root automatically.
 
