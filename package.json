@@ -21,24 +21,26 @@
 		"commands": [
 			{
 				"command": "gitignore-adder.createFile",
-				"title": "IgnoreAdder: Create empty .gitignore file at root"
+				"title": "Create empty .gitignore at root"
 			},
 			{
 				"command": "gitignore-adder.addFile",
-				"title": "IgnoreAdder: Add selected file to .gitignore"
+				"title": "Add to .gitignore"
 			}
 		],
 		"menus": {
 			"explorer/context": [
 				{
 					"command": "gitignore-adder.addFile",
-					"when": "resourceScheme == file"
+					"when": "resourceScheme == file",
+					"group": "navigation"
 				}
 			],
 			"editor/context": [
 				{
 					"command": "gitignore-adder.addFile",
-					"when": "resourceScheme == file"
+					"when": "resourceScheme == file",
+					"group": "navigation"
 				}
 			]
 		}

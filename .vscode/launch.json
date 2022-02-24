@@ -12,7 +12,8 @@
 			"request": "launch",
 			"args": [
 				"--extensionDevelopmentPath=${workspaceFolder}",
-				"--extensionDevelopmentKind=web"
+				"--extensionDevelopmentKind=web",
+				"--disable-extension=beatrix.gitignore-adder"
 			],
 			"outFiles": [
 				"${workspaceFolder}/dist/web/**/*.js"
