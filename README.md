@@ -11,6 +11,9 @@ This extension allows you to add selected directory or file to the `.gitignore` 
 
 > Tip: If a `.gitignore` file does not exist at root when adding a file / directory, a new `.gitignore` file will be created at root automatically.
 
+<img width="756" alt="Screen Shot 2022-02-23 at 4 48 49 PM" src="https://user-images.githubusercontent.com/68532117/155435955-9d323f2c-9d89-4acb-bb18-fddc41f6c179.png">
+
+
 ## Development
 
 * `npm install`
