@@ -2,9 +2,9 @@
 
 All notable changes to the "gitignore-adder" extension will be documented in this file.
 
-## [Unreleased]
+## [0.1.0]
 
-- TBA
+- the gitignore file is saved automatically after the `add to .gitignore` command
 
 ## [0.0.1]
 
